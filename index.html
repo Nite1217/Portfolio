@@ -1,29 +1,97 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <link rel="stylesheet" href="./assets/style.css" />
     <meta charset="UTF-8"/>
 <title>Nikol's Portfolio</title>
 </head>
+
 <body>
 <!-- Site Header -->
 <header>
-    <!-- h1: The most important headline -->
-    <h1>Student Bio</h1>
-
+    <h1>Nikol Delacruz</h1>
 </header>
 
-<h2>Your Name</h2>
-<img src="https://placehold.it/200x200"/>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat malesuada erat a auctor. Praesent sodales, arcu quis placerat dictum, erat turpis luctus felis, vitae viverra dolor ante non massa. Phasellus laoreet vulputate orci at tincidunt. Integer ullamcorper, purus at scelerisque tincidunt, leo quam pulvinar lacus, in feugiat arcu purus ut ligula. Integer non interdum arcu. Aliquam egestas cursus lorem nec ullamcorper. Sed id enim vitae turpis pretium rutrum. Pellentesque gravida arcu in pharetra sagittis. Phasellus dapibus leo a sapien luctus, quis bibendum ligula pulvinar. </p>
-<h3>Contact Info</h3>
-<ul>
-<li>
-    <strong>Email:</strong> 
-    <a href="mailto:someone@somesite.com">sample@gmail.com</a>
-</li>
-<li><strong>Github:</strong> <a href="#">samplename</a></li>
-<li>Portfolio: comingsoon</li>
-</ul>
+<!-- navigation -->
+<header>
+    <nav>
+        <!-- Unordered list element -->
+        <ul>
+            <!-- List item element-->
+            <li>
+                <!-- Anchor element -->
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#work">Work</a>
+            </li>
+            <li>
+                <a href="#contact-me">Contact Me</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- hero/jumbotron -->
+<section class="hero">
+    <div class="hero-cta">
+        <h2>Cool subtitle here!</h2>
+    </div>
+</section>
+<!-- end hero -->
+
+<!-- "About Me" section -->
+<section id="about-me"> 
+    <div class="flex-row">
+    <h2 class="section-title primary-border">
+       About Me
+    </h2>
+    </div>
+<div class="portfolio">
+<article class="bio">
+    <div class="my-bio">
+        <p>
+            This is my first personal online portfolio. 
+        </p>
+    </div>
+</article>
+
+<!-- "Work" Section-->
+<section id="work">
+    <div class="flex-row">
+        <h2 class="section-title primary-border">
+           Work
+        </h2>
+        </div>
+<article class="work">
+    <div class="portfolio">
+        <p>
+            Here you will find my projects.
+        </p>
+    </div>  
+</article>
+</section>
+
+<!-- "Contact Me" Section-->
+<section id="contact-me">
+    <div class="flex-row">
+        <h2 class="section-title primary-border">
+           Contact Me
+        </h2>
+<article class="contact-me">
+    <div class="portfolio">
+        <p>
+            P: 407.538.4485<br/>
+                E: <a href="mailto:nikol411@hotmail.com">Email Me</a>
+        </p>
+    </div>
+</article>
+</section>
+</div>
+</section>
+
 </body>
 <html>
