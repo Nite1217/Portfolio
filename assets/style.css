@@ -11,13 +11,14 @@
 }
 
 body {
-    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /* apply styles to <header> */
 header {
-    padding: 10px 15px;
+    padding: 10px 10px;
     background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +34,7 @@ header {
 }
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 40px;
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     margin: 0;
@@ -43,26 +44,26 @@ header a{
     color: var(--tertiary-color);
 }
 header nav {
-    margin: 7px 0;
-    text-decoration: underline;
+    margin: 5px 0;
+   
 }
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     list-style: none;
 }
 header nav ul li a {
-    padding: 20px 20px;
+    padding: 5px 20px;
+    border-bottom: 3px solid;
     font-weight: normal;
-    font-size: 1.55vw;
+    font-size: 1vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header nav ul li a:hover {
     background: none;
     color: var(--tertiary-color);
-    border-radius: 15px;
     text-shadow: none;
 }
 
@@ -71,38 +72,45 @@ header nav ul li a:hover {
     background-image: url("../assets/images/banner.jpg");
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: auto;
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 50%;   
 }
 .hero-cta {
-    width: 25%;
-    text-align: right;
+    width: 18%;
+    position: absolute;
     margin: 1.5%;
-    font-size: 18px;
-    line-height: 1.2;
+    font-size: 25px;
+    line-height: 1;
 }
-.hero h2 {
+.hero-cta h2 {
     color: var(--primary-color);
     background-color: var(--tertiary-color);
+    text-align: center;
 }
 /* Hero Style Ends */
 
-
+.portfolio {
+margin:50px auto;
+padding-bottom: 50px;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: left;
+justify-content: space-between;
+}
 .section-title {
-    font-size: 48px;
-    color: var(--secondary-color);
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
+    font-size: 60px;
+    color: var(--primary-color);
+    border-right: 3px solid;
+    padding-bottom: 10px;
     text-align: left;
-    margin: 0 auto 10px auto;
-    width: 50%;
+    margin: 0 auto 20px auto;
+    width: 20%;
 }
 .primary-border {
-    border-color: var(--secondary-color);
+    border-color: var(--primary-color);
 }
 .secondary-border {
     border-color: var(--tertiary-color);
@@ -110,10 +118,60 @@ header nav ul li a:hover {
 .intro p {
     line-height: 1.7;
     color: var(--tertiary-color);
-    width: 80%;
+    width: 100%;
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
+}
+.work {
+    margin: 20px;
+    color: var(--primary-color);
+    flex: 1;
+}
+.work-outline {
+    border: 3px solid var(--tertiary-color);
+    padding: 10px;
+    color: var(--primary-color);
+    width: 100%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+}
+.work-outline h3 {
+    font-weight: normal;
+    font-size: 36px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    margin: 0;
+}
+.work-outline p {
+    margin: 5px 0 5px 0;
+}
+.work img {
+    width: 100%;
+}
+.work img:hover {
+    border-radius: 0px;
+    text-shadow: none;
+}
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-me p,
+    color: var(--primary-color);
+    font-size: 32px;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-style: normal;
+}
+.contact-me:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+}
+.contact-me a {
+    color: var(--primary-color);
 }
 
 footer {
@@ -139,6 +197,7 @@ footer a {
 section {
     padding: 60px;
 }
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -176,30 +235,14 @@ section {
         flex: 1 100%;
     }
 }
+
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
      }
-     .step h3 {
-         flex: 1 100%;
-         text-align: center;
-     }  
-     .step-info {
-         flex: 2 100%;
-         text-align: center;
-         justify-content: center;
-     }
-     .step-img {
-         flex: 0 32%;
-         margin-right: 0;
-         margin-top: 15px;
-         margin-bottom: 15px;
-     }
-     .step-text {
-         flex: 100%;
-     }
 }
+
 /* MEDIA QUERY FOR AND SMALLER */
 @media screen and (max-width: 575px) {
     .section-title {
