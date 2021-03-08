@@ -106,7 +106,7 @@ justify-content: space-between;
     border-right: 3px solid;
     padding-bottom: 10px;
     text-align: left;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 10px auto;
     width: 20%;
 }
 .primary-border {
@@ -130,22 +130,23 @@ justify-content: space-between;
 }
 .work-outline {
     border: 3px solid var(--tertiary-color);
-    padding: 10px;
+    padding: 5px;
     color: var(--primary-color);
     width: 100%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 1.5%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     border-radius: 0px;
 }
 .work-outline h3 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 36px;
+    position: absolute;
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     margin: 0;
 }
 .work-outline p {
-    margin: 5px 0 5px 0;
+    margin: 0px;
 }
 .work img {
     width: 100%;
@@ -159,16 +160,17 @@ justify-content: space-between;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.contact-me p,
+.contact-me p {
     color: var(--primary-color);
-    font-size: 32px;
+    font-size: 60px;
+    justify-content: space-between;
     margin: 20px 0;
     line-height: 1.5;
     font-style: normal;
 }
 .contact-me:hover {
     color: var(--primary-color);
-    background: var(--tertiary-color);
+    background: none;
 }
 .contact-me a {
     color: var(--primary-color);
@@ -195,7 +197,7 @@ footer a {
     color: var(--secondary-color);
 }
 section {
-    padding: 60px;
+    padding: 40px;
 }
 
 
