@@ -4,4 +4,4 @@ https://nite1217.github.io/Portfolio/
 
 A look at my first professional portfolio.
 
-<img src="" alt="screenshot of website"/>
+<img src="./assets/images/portfolio-screenshot.jpg" alt="screenshot of website"/>
